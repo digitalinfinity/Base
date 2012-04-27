@@ -10,3 +10,16 @@
 *.lai
 *.la
 *.a
+
+# Ignore any built objs/binaries
+bin/
+
+# VC++ Project gunk
+*.user
+*.sdf
+*.ncb
+*.suo
+*.opensdf
+*.*.old
+*.ipch
+build/vc/ipch/
