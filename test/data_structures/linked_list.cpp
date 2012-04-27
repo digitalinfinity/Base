@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "data_structures\linked_list.h"
+#include "data_structures/linked_list.h"
 
 class IntLinkedListTest : public ::testing::Test {
  protected:

@@ -25,10 +25,10 @@ class LinkedList
 {
 // Internal types and typedefs
 public:
-	typedef typename T TNodeType;
-	typedef typename LinkedList<T> TListType;
-	typedef typename Iterator<TListType> TListIteratorType;
-	friend  TListIteratorType;
+	typedef VCTYPENAME T TNodeType;
+	typedef VCTYPENAME LinkedList<T> TListType;
+	typedef VCTYPENAME Iterator<TListType> TListIteratorType;
+	friend  class Iterator<TListType>;
 
 private:
 	///

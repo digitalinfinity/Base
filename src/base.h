@@ -12,5 +12,5 @@
  */
 
 #ifndef BASE_NO_DATA_STRUCTURES
-#include "data_structures\data_structures.h"
+#include "data_structures/data_structures.h"
 #endif
