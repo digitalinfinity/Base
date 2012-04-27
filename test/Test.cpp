@@ -5,7 +5,7 @@
 
 #include <iostream>
 
-int _tmain(int argc, _TCHAR* argv[])
+int main(int argc, char* argv[])
 { 
     testing::InitGoogleTest(&argc, argv); 
     int i = RUN_ALL_TESTS(); 

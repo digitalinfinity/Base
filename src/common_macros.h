@@ -1,14 +1,26 @@
 #pragma once
 
+#ifdef _MSC_VER
+#define MSVC_BUILD 1
+#endif
+
 #define null NULL
 #define Assert assert
 
-#ifdef _MSC_VER
+#ifdef MSVC_BUILD
+// size_t is define as a part of the Windows headers in VC++
+// g++'s stdlib defines it- to avoid redefinition, we typedef
+// only if we're in VC++
 typedef unsigned int size_t;
+
+// Since VC++ and g++ process templates differently, sometimes
+// VC++ requires the use of the typename keyword to resolve a type
+// while g++ complains that it is an illegal use of said keyword
+// The VCTYPENAME macro is used when we need to use typename simply
+// to calm VC++ down
 #define VCTYPENAME typename
 #else
 #define VCTYPENAME 
-
 #endif
 
 typedef void* Handle;

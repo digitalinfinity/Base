@@ -8,14 +8,6 @@
 #include "targetver.h"
 
 #include <stdio.h>
-
-#ifdef _MSC_VER
-#include <tchar.h>
-#else
-#define _TCHAR char
-#define _tmain main
-#endif
-
 #include <gtest/gtest.h>
 #include <base.h>
 
