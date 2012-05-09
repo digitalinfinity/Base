@@ -81,6 +81,8 @@
     <ClInclude Include="..\..\..\src\data_structures\comparer.h" />
     <ClInclude Include="..\..\..\src\data_structures\data_structures.h" />
     <ClInclude Include="..\..\..\src\data_structures\linked_list.h" />
+    <ClInclude Include="..\..\..\src\util\Log.h" />
+    <ClInclude Include="..\..\..\src\util\Ptr.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\src\Library.cpp" />

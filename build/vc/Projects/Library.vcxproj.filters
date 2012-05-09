@@ -22,6 +22,9 @@
     <Filter Include="Header Files\inline\data_structures">
       <UniqueIdentifier>{cc3cf815-084d-4ca4-add3-235b6b3bebdf}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Util">
+      <UniqueIdentifier>{38ab73a4-f68c-4ced-976b-bf77b348c1ff}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\src\data_structures\linked_list.h">
@@ -38,6 +41,12 @@
     </ClInclude>
     <ClInclude Include="..\..\..\src\data_structures\comparer.h">
       <Filter>Header Files\datastructures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\util\Log.h">
+      <Filter>Header Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\util\Ptr.h">
+      <Filter>Header Files\Util</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

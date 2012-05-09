@@ -5,7 +5,20 @@
 #endif
 
 #define null NULL
-#define Assert assert
+
+#ifdef UNICODE
+typedef wchar_t CharType;
+#else
+typedef char CharType;
+#endif
+
+inline void Assert(bool condition) {
+	_ASSERTE(condition);
+}
+
+inline void Assert(bool condition, CharType* msg) {
+	_ASSERT_EXPR(condition, msg);
+}
 
 #ifdef MSVC_BUILD
 // size_t is define as a part of the Windows headers in VC++
