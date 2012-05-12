@@ -43,7 +43,7 @@
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
-    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\..\extern\inc\;$(SolutionDir)..\..\src;$(SolutionDir)..\..\test;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\..\extern\inc\;$(SolutionDir)..\..\src\inc;$(SolutionDir)..\..\test;$(IncludePath)</IncludePath>
     <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\..\extern\inc\;$(SolutionDir)..\..\src;$(SolutionDir)..\..\test;$(IncludePath)</IncludePath>
     <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\..\extern\lib\vc\gtest-1.6.0\$(Configuration);$(LibraryPath)</LibraryPath>
     <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\..\extern\lib\vc\gtest-1.6.0\$(Configuration);$(LibraryPath)</LibraryPath>
@@ -87,7 +87,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\test\algorithms\string\string.cpp" />
     <ClCompile Include="..\..\..\test\data_structures\linked_list.cpp" />
+    <ClCompile Include="..\..\..\test\data_structures\matrix.cpp" />
     <ClCompile Include="..\..\..\test\Test.cpp" />
     <ClCompile Include="..\..\..\test\stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

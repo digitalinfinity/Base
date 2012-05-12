@@ -25,33 +25,57 @@
     <Filter Include="Header Files\Util">
       <UniqueIdentifier>{38ab73a4-f68c-4ced-976b-bf77b348c1ff}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\algorithms">
+      <UniqueIdentifier>{45d7022c-e216-40d7-a76c-04f471ae1efe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\algorithms">
+      <UniqueIdentifier>{f30bf0ae-2867-40a4-891a-41a14cec37a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\algorithms\string">
+      <UniqueIdentifier>{374a64fe-f174-497b-9dfe-a3ac5dfffa63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\algorithms\string">
+      <UniqueIdentifier>{94fac345-5b9e-4b82-a4cc-b915f11d9ac6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\src\data_structures\linked_list.h">
+    <ClInclude Include="..\..\..\src\inc\data_structures\comparer.h">
       <Filter>Header Files\datastructures</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\src\Base.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\data_structures\data_structures.h">
+    <ClInclude Include="..\..\..\src\inc\data_structures\data_structures.h">
       <Filter>Header Files\datastructures</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\src\common_macros.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\data_structures\comparer.h">
+    <ClInclude Include="..\..\..\src\inc\data_structures\linked_list.h">
       <Filter>Header Files\datastructures</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\src\util\Log.h">
+    <ClInclude Include="..\..\..\src\inc\util\Log.h">
       <Filter>Header Files\Util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\src\util\Ptr.h">
+    <ClInclude Include="..\..\..\src\inc\util\Ptr.h">
       <Filter>Header Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\inc\base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\inc\common_macros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\inc\algorithms\string\search.h">
+      <Filter>Header Files\algorithms\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\inc\data_structures\Matrix.h">
+      <Filter>Header Files\datastructures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\inc\algorithms\algorithms.h">
+      <Filter>Header Files\algorithms</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\src\Library.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\algorithms\string\search.cpp">
+      <Filter>Source Files\algorithms\string</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -59,6 +83,9 @@
       <Filter>Header Files\inline\data_structures</Filter>
     </None>
     <None Include="..\..\..\src\inline\data_structures\comparer.inl">
+      <Filter>Header Files\inline\data_structures</Filter>
+    </None>
+    <None Include="..\..\..\src\inline\data_structures\matrix.inl">
       <Filter>Header Files\inline\data_structures</Filter>
     </None>
   </ItemGroup>

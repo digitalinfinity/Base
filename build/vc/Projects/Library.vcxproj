@@ -38,7 +38,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>..\..\src;..\..\src\data_structures;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)..\..\src\inc;$(IncludePath)</IncludePath>
     <OutDir>$(SolutionDir)..\..\bin\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)..\..\bin\obj\$(Configuration)\</IntDir>
   </PropertyGroup>
@@ -76,20 +76,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\src\Base.h" />
-    <ClInclude Include="..\..\..\src\common_macros.h" />
-    <ClInclude Include="..\..\..\src\data_structures\comparer.h" />
-    <ClInclude Include="..\..\..\src\data_structures\data_structures.h" />
-    <ClInclude Include="..\..\..\src\data_structures\linked_list.h" />
-    <ClInclude Include="..\..\..\src\util\Log.h" />
-    <ClInclude Include="..\..\..\src\util\Ptr.h" />
+    <ClInclude Include="..\..\..\src\inc\algorithms\algorithms.h" />
+    <ClInclude Include="..\..\..\src\inc\algorithms\string\search.h" />
+    <ClInclude Include="..\..\..\src\inc\base.h" />
+    <ClInclude Include="..\..\..\src\inc\common_macros.h" />
+    <ClInclude Include="..\..\..\src\inc\data_structures\comparer.h" />
+    <ClInclude Include="..\..\..\src\inc\data_structures\data_structures.h" />
+    <ClInclude Include="..\..\..\src\inc\data_structures\linked_list.h" />
+    <ClInclude Include="..\..\..\src\inc\data_structures\Matrix.h" />
+    <ClInclude Include="..\..\..\src\inc\util\Log.h" />
+    <ClInclude Include="..\..\..\src\inc\util\Ptr.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\src\algorithms\string\search.cpp" />
     <ClCompile Include="..\..\..\src\Library.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\src\inline\data_structures\comparer.inl" />
     <None Include="..\..\..\src\inline\data_structures\linked_list.inl" />
+    <None Include="..\..\..\src\inline\data_structures\matrix.inl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

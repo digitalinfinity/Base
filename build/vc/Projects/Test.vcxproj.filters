@@ -22,6 +22,12 @@
     <Filter Include="Source Files\data_structures">
       <UniqueIdentifier>{daca4910-e9f8-4b2f-ab2a-c1337417feaa}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\algorithms">
+      <UniqueIdentifier>{ee66ef56-dd8b-409b-b2ec-651cf659fdce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\algorithms\string">
+      <UniqueIdentifier>{37ada1c0-938f-468e-aa19-a7ff41d77113}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\test\stdafx.cpp">
@@ -31,6 +37,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\test\data_structures\linked_list.cpp">
+      <Filter>Source Files\data_structures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\test\algorithms\string\string.cpp">
+      <Filter>Source Files\algorithms\string</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\test\data_structures\matrix.cpp">
       <Filter>Source Files\data_structures</Filter>
     </ClCompile>
   </ItemGroup>

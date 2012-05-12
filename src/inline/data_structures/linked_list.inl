@@ -1,4 +1,4 @@
-#include "../../base.h"
+#include <base.h>
 
 // #define Iterate(currentNode) for (ListNode* currentNode = this->m_head; currentNode != null; currentNode = currentNode->next)
 #define Iterate(iterator) for (TListIteratorType iterator(this); !iterator.AtEnd();  iterator.MoveNext())
