@@ -39,11 +39,11 @@
     <ClCompile Include="..\..\..\test\data_structures\linked_list.cpp">
       <Filter>Source Files\data_structures</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\test\algorithms\string\string.cpp">
-      <Filter>Source Files\algorithms\string</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\test\data_structures\matrix.cpp">
       <Filter>Source Files\data_structures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\test\algorithms\string\search.cpp">
+      <Filter>Source Files\algorithms\string</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
